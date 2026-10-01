@@ -234,6 +234,21 @@ const ideas = [
     ]
   },
   {
+    "id": "senckenberg",
+    "title": "Senckenberg Naturmuseum",
+    "description": "Explore dinosaur skeletons and the natural world together. Pick the exhibit that surprises us most.",
+    "category": "activity",
+    "image": "images/Senckenberg Naturmuseum.png",
+    "activity": "creative",
+    "vibes": [
+      "adventurous",
+      "romantic"
+    ],
+    "location": "Senckenberganlage 25, Frankfurt",
+    "details": [],
+    "source": "https://museumfrankfurt.senckenberg.de/de/"
+  },
+  {
     "id": "boardgames",
     "title": "Board games & a cozy blanket",
     "description": "Make a blanket nest, pick a favorite game, grab snacks, and settle in. Friendly competition optional.",

@@ -27,7 +27,7 @@ const click = selector => app.querySelector(selector).onclick();
 run(fs.readFileSync('catalog.js', 'utf8'));
 run(fs.readFileSync('app.js', 'utf8'));
 const catalog = run('ideas');
-assert.equal(catalog.length, 24);
+assert.equal(catalog.length, 25);
 assert(!catalog.some(idea => idea.id === '269'));
 assert(catalog.some(idea => idea.id === 'tonka' && idea.food.includes('vegan')));
 const homeCards = catalog.filter(idea => idea.activity === 'home');
@@ -90,5 +90,5 @@ assert(run('summaryText()').includes('Own idea: Tea <and> stars'));
     assert.equal(run('picks.challenge'), undefined); timer();
   }
   winning.onclick({ detail: 1 }); assert.equal(run('picks.challenge'), 'winning');
-  console.log('Passed: 24 cards and assets, matching combinations, vegan filters, deduplication, full flow, custom text, copying, restart, five dodges.');
+  console.log('Passed: 25 cards and assets, matching combinations, vegan filters, deduplication, full flow, custom text, copying, restart, five dodges.');
 })().catch(error => { console.error(error); process.exitCode = 1; });
